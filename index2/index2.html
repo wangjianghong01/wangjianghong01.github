@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title id="title">视频播放</title>
+		<link rel="stylesheet" type="text/css" href="../css/index2Css.css"/>
+		<script type="text/javascript" src="../js/jquery/jquery-3.2.1.js" ></script>
+		<script type="text/javascript" src="../js/index2Js.js" ></script>
+		<script type="text/javascript" src="../js/indexJs.js" ></script>
+		<script type="text/javascript">
+			cheshi();
+		</script>
+	</head>
+	<body >	
+		<div class="suo" id="suo"   >
+		    <div class="suo-1" style="border-right: 3px solid white;">
+		    	内容
+		    </div>
+		    <div class="suo-1" align="center">
+		        <div class="suo-1-1" style="position: relative;top: 5px;">
+		        	历史搜索
+		        </div>
+		        <div class="suo-1-1" style="position: relative;top: 150px;">
+		        	热搜词汇
+		        </div>
+		    </div>	
+		</div>
+		<div id="zd1"><!--遮挡页面1--></div>
+		<div id="zd2"><!--遮挡页面2--></div>
+		<div class="set" id="set1" align="center" >
+			<div class="" style="border: 1px solid;margin-top: 70px;padding:5px;width:100px; background-color:#d9d9d9 ;">
+				主题颜色设置
+			</div>
+			<div class="" style="border: 1px solid;margin-top: 25px;padding:5px;width:100px;background-color:#d9d9d9 ;">
+				网页背景设置
+			</div>
+		</div>
+		<div class="set" id="set2" align="center">
+			<div class="" style="border: 1px solid; float: left; margin: 80px 50px; padding:5px; background-color:#d9d9d9 ;">
+				<a href="GN注册页面.html" style="text-decoration: none; color: black;" target="_blank">注册</a>
+			</div>
+			<div class="" style="border: 1px solid; float: left; margin:80px 30px;padding:5px;background-color:#d9d9d9 ;" onclick="setIn6();">
+				<a href="#" style="text-decoration: none; color: black;" >登陆</a>
+			</div>
+		</div>
+		<div  id="share" align="center">
+			<div  style="background-color: #4473C5;width: 390px;height: 40px;margin-top: 5px;margin-bottom: 10px; ">				
+			</div>
+			<div  style="width: 390px;height:80px;">
+				<input type="button" class="share-btn" value="GN" style="padding: 5px;margin-right: 30px;" />
+				<input type="button" class="share-btn" value="直播购" style="padding: 5px; " />
+			</div>
+			<div style="width: 390px;height:80px;">
+				<input type="button" class="share-btn"  value="微信" style="padding: 5px; margin-right: 15px;" />
+				<input type="button" class="share-btn" value="微博" style="padding: 5px; margin-right: 15px;" />
+				<input type="button" class="share-btn" value="QQ" style="padding: 5px; margin-right: 15px;" />
+				<input type="button" class="share-btn" value="复制链接" style="padding: 5px;" />
+			</div>
+		</div>
+		<div class="set" id="set3" align="center" style="height: 500px;">
+			<div class="" style="border: 1px solid; margin-top: 5px; padding:5px; background-color:#d9d9d9 ;">				
+				历史播放记录
+			</div>
+			<div class="" style="border: 1px solid;  margin-top:10px;padding:5px;background-color:#d9d9d9 ;">
+				视频内容区
+			</div>
+		</div>
+		<div id="login" align="center">
+			<div  style="width: 98%;height: 15%;background-color:#4473C5 ;margin-top: 5px;margin-bottom: 3px;">登陆方式
+			    <div style="float: right;" onclick="setIn6();">
+			    	<img src="icon/close.PNG" width="67px" height="67px"/>
+			    </div>
+			</div>
+			<div id="" style="width: 98%;height: 12%;">
+				<div id="" style="float: left;width: 49.8%;height: 100%;background-color: #AAACAB;">
+					<a href="GNlogin.html" target="_blank ">GN</a>
+				</div>
+				<div id="" style="float: right;width: 49.8%;height: 100%;background-color: #AAACAB;">
+					直播购
+				</div>
+			</div>
+			<div id="" style="width: 98%;height: 27%;margin-top: 15px; ">
+				<div id="" style="float: left;width:50%;height:98%;">
+					<div  style="float: left;width:30%;height: 100%;">
+						<img src="../img/tubiao.PNG"/ width="100px" height="100px">
+					</div>
+					<div  style="float: left;width:30%;height: 100%;margin-left: 15px;">
+						<img src="../img/EWM.PNG"/ width="100px" height="100px">
+					</div>
+					<div  style="float: right;width:30%;height: 100px;background-color: #3259A4;">						
+					</div>
+				</div>
+				<div id="" style="float: right;width:49%;height: 98%;">
+					<img src="../img/EWM.PNG" width="100px" height="100px" />
+				</div>
+			</div>
+			<div id="login-4" style="width: 98%;height: 10%; margin-top: 10px;">
+				<a href="#">账号密码登陆</a>
+				<a href="#" style="border-left: 1px solid;border-right: 1px solid;">安全中心</a>
+				<a href="#" style="border-right: 1px solid;">注册新账号</a>
+				<a href="#" >维护中心</a>
+				<hr width="65%" />
+			</div>
+			<div  >
+				<span id="" onclick="logslt()">
+					第三方平台登陆
+				</span>
+			</div>
+			<div  id="logSlt" style="margin-top: 20px;">
+				<input type="button"  value="其他方式" />
+				<input type="button"  value="微信" />
+				<input type="button"  value="QQ" />
+				<input type="button"  value="微博" />
+			</div>
+		</div>
+		<div class="div" id="top" >
+			<div id="logo" align="center" onclick="tiaozhuan()">
+				logo
+			</div>
+			<div id="top-1">
+				造梦者影视
+			</div>
+			<div id="menu">
+				<ul>
+					<li><a href="../menu/精选.html">精选</a></li>
+					<li><a href="../menu/校园故事.html">校园故事</a></li>
+					<li><a href="../menu/微电影.html">微电影</a></li>
+					<li><a href="../menu/时尚短片.html">时尚短片</a></li>
+					<li><a href="../menu/校园新闻.html">校园新闻</a></li>
+					<li><a href="../menu/校园资讯.html">校园资讯</a></li>
+					<li><a href="../index.html">全部</a></li>
+				</ul>
+			</div>
+			<div style="float: right;">
+				<input type="button" id="btnsearch"  value="搜索"  onclick="setIn4();"   />
+			    <input type="button" class="top-3" id="btnhistory"  value="历史"   onclick="setIn3();" />
+		        <input type="button" class="top-3" id="btnlogo"  value="登陆"  onclick="setIn2();"  />
+			    <input type="button" class="top-3" id="btnset"  value="设置"   onclick="setIn();"  />
+			</div>
+				
+		</div>
+		<div class="main" id="main">
+			<div class="div" id="div1">
+				相关热播推荐
+			</div>
+			<div class="div" id="div2" align="center">
+				<div class="div2-1">
+					<div class="div2-1-1">
+						视频内容
+					</div>
+					<div class="div2-1-2">
+						视频标题内容介绍
+					</div>
+				</div>
+				<div class="div2-1">
+					<div class="div2-1-1">
+						视频内容
+					</div>
+					<div class="div2-1-2">
+						视频标题内容介绍
+					</div>
+				</div>
+				<div class="div2-1">
+					<div class="div2-1-1">
+						视频内容
+					</div>
+					<div class="div2-1-2">
+						视频标题内容介绍
+					</div>
+				</div>
+				<div class="div2-1">
+					<div class="div2-1-1">
+						视频内容
+					</div>
+					<div class="div2-1-2">
+						视频标题内容介绍
+					</div>
+				</div>
+				<div class="div2-1">
+					<div class="div2-1-1">
+						视频内容
+					</div>
+					<div class="div2-1-2">
+						视频标题内容介绍
+					</div>
+				</div>
+				<div class="div2-1">
+					<div class="div2-1-1">
+						视频内容
+					</div>
+					<div class="div2-1-2">
+						视频标题内容介绍
+					</div>
+				</div>
+			</div>
+			<div class="div3" id="div3">
+				<div id="div3-1" class="div">
+					<div id="logo2" align="center">
+				       logo
+			        </div>
+			        <div id="div3-1-1">
+				                视频标题内容
+			        </div>
+			        <div id="div3-1-2">
+				        <a href="#"> 关闭</a>
+			        </div>
+				</div>
+				<div id="div3-2" class="div3-2"  >
+					<video  id="vidplay" controls="controls" width="775px" height="436px">
+						<source  src="video/图1.mp4" type="video/mp4"></source>
+			            <source  src="myvideo.ogv" type="video/ogg"></source>
+			            <source  src="myvideo.webm" type="video/webm"></source>
+			                          当前浏览器不支持 video直接播放，点击这里下载视频： <a href="myvideo.webm">下载视频</a>
+					</video>										
+					
+					<!--
+						<object >
+						   <embed src="video/图1.mp4" width="500px" height="400px"></embed>
+					    </object>
+                    -->
+				</div>
+				<div id="div3-3" class="div" >
+					
+					<input type="button" id="vidshift" class="div3-3-1" style="padding: 4px 10px 6px 10px; margin-left: 20px;" value="播放" onclick="vidShift();" />
+					<input type="button" class="div3-3-1"  style="padding: 4px 10px 6px 10px;margin-left: 15px;" value="下一" />
+					
+					<input type="button"  class="div3-3-1"  style="padding: 4px 15px 6px 15px;margin-left: 40px;" value="时间显示" />
+					
+					<input type="button" class="div3-3-1" style="padding: 4px 10px 6px 10px;margin-left: 200px;" value="高清" />
+					
+					<input type="button" id="playSpeed" class="div3-3-1" style="padding: 4px 10px 6px 10px;margin-left: 20px;" value="倍速" onclick="playSpeed();" />
+					
+					<input type="button" class="div3-3-1" style="padding: 4px 10px 6px 10px;margin-left: 100px;" value="全屏" onclick="" />
+				</div>
+				<div id="div3-4" class="div">
+					
+					<input type="button" class="div3-3-1" style="padding: 4px 10px 6px 10px; margin-left: 15px;" value="播放次数" />
+					
+					<input type="button" class="div3-3-1" style="padding: 4px 10px 6px 10px; margin-left: 15px;" value="下载次数" />
+					
+					<input type="button" class="div3-3-1" style="padding: 4px 10px 6px 10px; margin-left: 30px;" value="关闭弹幕" />
+					
+					<input type="button" class="div3-3-1" style="padding: 4px 10px 6px 10px; margin-left: 15px;" value="发表弹幕" />
+					
+				<a href="video/图1.mp4" style="text-decoration:none;" download="图一.mp4"><input type="button" class="div3-3-1" style="padding: 4px 10px 6px 10px; margin-left: 98px;" value="下载视频"/></a>
+					
+					<input type="button"class="div3-3-1" style="padding: 4px 10px 6px 10px; margin-left: 15px;" value="收藏视频" />
+					
+					<input type="button" class="div3-3-1" style="padding: 4px 10px 6px 10px; margin-left: 15px;" value="分享视频" onclick="setIn5();" />
+				</div>				
+			</div>
+		</div>
+	</body>
+</html>

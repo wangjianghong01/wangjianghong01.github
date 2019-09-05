@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>GN注册</title>
+		<style type="text/css">
+			*{margin: 0px;padding: 0px;}
+			body{position: absolute;top: 0px;bottom: 0px;left: 0px;right: 0px;}
+			#top{width: 100%;height:10%;border: 1px solid;}
+			#main{width: 60%;height: 90%; border: 1px solid; margin: 0px auto;}
+			#img{width: 60px;height: 60px;background-color: #3259A4;float: left; margin-top: 6px;margin-left: 15px;}
+			#easy{float: left; font-size: 28px;font-weight: bold;margin-top: 4px;margin-left: 10px;}
+			#easy-1{float: left; font-size: 35px;margin-top: 20px;margin-left: 435px;}
+			#easy-2 {float: right;margin-top: 22px;margin-right: 30px;}
+			#easy-2  a{font-size: 20px;text-decoration: none;color: black; }
+			table{margin-left: 150px;color: #A8A8A8;}
+			table tr{height:42px;}			
+			.span{color:#f05654;}
+			table tr td input{width: 250px;height: 25px; border:1px solid #C0C0C0; border-radius: 5px;}
+			#check{width: 150px;height: 25px;}
+			#feel{width: 90px;height: 25px;margin-left: 9px;}
+			#sele{width: 250px;height: 25px; border:1px solid #C0C0C0; border-radius: 5px;}
+		</style>
+		<script type="text/javascript">
+			var pwd;
+			//封装校验
+			function check(id,reg,str){
+				var inp=document.getElementById(id).value;				
+				var span=document.getElementById(id+"Span");
+				if(inp==""||inp==null){
+					span.innerHTML=str+"不能为空";
+					span.style.color="red";
+					return false;
+				}else if(reg.test(inp)){
+					pwd=inp;
+					span.innerHTML=str+"正确";
+					span.style.color="black";
+					return true;
+				}else{
+					span.innerHTML=str+"错误";
+					span.style.color="red";
+					return false;
+				}
+			}
+			function checkPhone(){
+				return check("phone",/^1[3,4,5,8,7][0-9]{9}$/,"手机号")
+			}
+			var verificationCode;
+			function checkMa(){
+				var check=document.getElementById("check").value;
+				var span=document.getElementById("checkSpan");
+				if(check==""||check==null){
+					span.innerHTML="验证码不能为空";
+					span.style.color="red";
+					return false;
+				}else if(check===verificationCode){
+					span.innerHTML="验证码正确";
+					span.style.color="black";
+					return true;
+				}else{
+					span.innerHTML="验证码不正确";
+					span.style.color="red";
+					return false;
+				}
+			}
+			function checkPwd1(){
+				return check("pwd1",/^[\w]{6,16}$/,"密码")			
+			}			
+			function checkPwd2(){
+				var pwd2=document.getElementById("pwd2").value;
+				
+				var span=document.getElementById("pwd2Span");
+				if(pwd2==""||pwd2==null){
+					span.innerHTML="确定密码不能为空";
+					span.style.color="red";
+					return false;
+				}else if(pwd2===pwd){
+					span.innerHTML="前后密码一致正确";
+					span.style.color="black";
+					return true;
+				}else{
+					span.innerHTML="前后密码不同";
+					span.style.color="red";
+					return false;
+				}
+			}
+			function checkName(){
+				return check("name",/^[a-zA-Z\u4e00-\u9fa5 .]{2,15}$/,"名字")
+			}
+			function checkID(){
+				return check("ID",/^[0-9]{16}[0-9A-Z]{1}$/,"证件号码")
+			}
+			function agree(){
+			document.getElementById("btn").disabled=!document.getElementById("agr").checked;
+			}
+			function checkAll(){
+				checkPhone();
+				checkPwd1();
+				checkPwd2();
+				checkID();
+				checkName();
+				checkMa();
+				return checkPhone()&&checkPwd1()&&checkPwd2()&&checkID()&&checkName()&&checkMa() ;
+			}
+		</script>
+	</head>
+	<body >
+		<div id="top">
+			 <div id="img">
+			 	logo
+			 </div>
+			 <div id="easy">
+			 	造梦者影视<br/>
+			 	<span style="font-size: 20px;">Dream marker film</span>
+			 </div>
+			 <div id="easy-1">
+			 	欢迎注册GN
+			 </div>
+			 <div id="easy-2">
+			 	<a href="">语言选择</a>
+			 </div>
+		</div>
+		<div id="main">
+			<form action="#" method="post" onsubmit="return checkAll()">
+				<table>
+					<tr>
+						<td><span class="span">*</span>手机号</td>
+						<td><input type="number" class="inbox" name="" id="phone" value="" onblur="checkPhone();" /></td>
+						<td><span id="phoneSpan"></span></td>
+						
+					</tr>
+					<tr>
+						<td><span class="span">*</span>短信验证码</td>
+						<td><input type="text" class="inbox" name="" id="check" value="" onblur="checkMa();" /><input type="button" name="" id="feel" value="免费获取" /></td>
+						<td><span id="checkSpan"></span></td>
+					</tr>
+					<tr>
+						<td><span class="span">*</span>密码</td>
+						<td><input type="password" class="inbox" name="" id="pwd1" value="" onblur="checkPwd1();" /></td>
+					    <td><span id="pwd1Span"></span></td>
+					</tr>
+					<tr>
+						<td><span class="span">*</span>密码确定</td>
+						<td><input type="password" class="inbox" name="" id="pwd2" value="" onblur="checkPwd2();" /></td>
+						<td><span id="pwd2Span"></span></td>
+					</tr>
+					<tr>
+						<td><span class="span">*</span>姓名</td>
+						<td><input type="text" class="inbox" name="" id="name" value="" onblur="checkName();" /></td>
+						<td><span id="nameSpan"></span></td>
+					</tr>
+					<tr>
+						<td><span class="span">*</span>证件类型</td>
+						<td>
+							<select id="sele">
+								<option value="0">居民身份证</option>
+							    <option value="1">港澳身份证</option>
+							    <option value="2">其他国家和地区身份证</option>
+							    <option value="3">护照</option>
+						    </select>
+						</td>
+						<td>中国大陆地区推荐使用居民身份证</td>
+					</tr>
+					<tr>
+						<td><span class="span">*</span>证件号码</td>
+						<td><input type="text" class="inbox" name="" id="ID" value="" onblur="checkID();" /></td>
+						<td><span id="IDSpan"></span></td>
+					</tr>
+					<tr>
+						<td>安全邮箱</td>
+						<td><input type="email" class="inbox" name="" id="email" value="" /></td>
+						<td>请设定一个安全邮箱，忘记密码时可通过此邮箱找回密码</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td colspan="3" style="font-size: 16px;"  >请牢记你设置的密保问题及答案，以便于你忘记密码时通过此“密保问题，答案”找回密码</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>密保问题1</td>
+						<td>
+							<select id="sele">
+								<option value="0">你的小学班主任是？</option>
+							    <option value="1">你最喜欢的电影？</option>
+							    <option value="2">你高中毕业于？</option>
+							    <option value="3">自定义</option>
+						    </select>
+						</td>
+						<td>答案<input type="text" name="" id="" value="" /></td>
+					</tr>
+					<tr>
+						<td>密保问题2</td>
+						<td>
+							<select id="sele">
+								<option value="0">你的中学学班主任是？</option>
+							    <option value="1">你最喜欢的水果？</option>
+							    <option value="2">你的外号？</option>
+							    <option value="3">自定义</option>
+						    </select>
+						</td>
+						<td>答案<input type="text" name="" id="" value="" /></td>
+					</tr>
+					<tr>
+						<td>密保问题3</td>
+						<td>
+							<select id="sele">
+								<option value="0">你最喜欢的音乐？</option>
+							    <option value="1">你最喜欢的一句话是？？</option>
+							    <option value="2">有风有月有酒，下句你会说？</option>
+							    <option value="3">自定义</option>
+						    </select>
+						</td>
+						<td>答案<input type="text" name="" id="" value="" /></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td ><input type="checkbox" name="" id="agr" value="" style="width: 15px;height: 15px;" onclick="agree();" />我已阅读并同意
+							<a href="#" style="text-decoration: none;">"服务条款"</a>
+						</td>
+					</tr>
+					<tr>
+						<td></td>				
+						<td><input type="submit" id="btn" value="立即注册" disabled="value" onclick="checkAll();" /></td>
+					</tr>
+				</table>				
+				
+			</form>
+			
+		</div>
+		
+	</body>
+</html>

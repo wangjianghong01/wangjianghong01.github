@@ -1,0 +1,49 @@
+	div{
+				margin: 0;padding: 0;border: 0px;
+			}
+			#top ul li{
+				list-style: none;
+				float: left;
+				
+			}
+			a{text-decoration: none;}
+			 #top ul li a{
+				
+				color:white;
+				padding: 15px 10px 13px 10px;
+				margin: 0px 10px 0 10px;
+				
+			}
+			#top ul li a:hover{
+				background-color: #1E90FF;
+			}	
+			.bot{
+				margin: 6px;
+				
+			}
+			.bot a{
+				color: black;
+			}
+			.fw{
+			width: 25%;height: 50%;border: 0px;float: left;margin: 0px;	
+			}
+			.fw a{position:relative;top: 25px;}
+			.bt{
+				font-weight: bolder;
+			}
+			.ebt{
+				color: #1E90FF;
+			}
+			.sp1{
+				width: 22%;height: 100%;float: left;margin-right: 20px;
+			}
+			.sp2{
+				width: 100%;height: 50%;background-color:#1E90FF ;
+				background-image: url(../img/图一.png);
+			}
+			.sp3{
+				width: 100%;height: 50%;color: #c0c0c0;background-color: white;
+			}
+			.sp4{width: 100px;height:20px;border: 1px solid;}
+			.sp3:hover{background-color: #fffaf0;}
+			.sp4:hover{background-color:#1E90FF; }
