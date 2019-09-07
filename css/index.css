@@ -1,6 +1,7 @@
            *{
 				margin: 0;padding: 0;border: 0px;
 			}
+#top{overflow:hidden;}
 			#top ul{width: 897px;height:60px;float: right;}
 			#top ul li{
 				list-style: none;
