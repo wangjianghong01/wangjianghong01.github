@@ -19,10 +19,9 @@
 			}
 			#top ul li a:hover{
 				background-color: #1E90FF;
-			}
-                        .rbsort{
-				width:300px;height:400px; float: right;margin-right: 25px;background-color: #f5f5f5;
-                         }
+			}	
+			.rbsort{width:250px;height:400px; float: right;margin-right:35px;background-color: #f5f5f5;}
+			.videoshow{width:825px;height: 400px; float:right; margin-right:50px;}
 			.bot{
 				margin: 6px;
 				
