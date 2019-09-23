@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html style="width: ;">
 	<head>
 		<meta charset="UTF-8">
 		<title>GN登陆</title>
 		<style type="text/css">
+			html{width:1536px; margin: auto;overflow: auto;}
 			*{margin: 0px;padding: 0px;}
 			.login{float: left;}
-			body{position: absolute;top: 0px;bottom: 0px;left: 0px;right: 0px;}
+			body{width:1536px;height:750px;}
 			#div1{background-color: #3259A4;width: 38%;height: 100%;}
 			#div2{background-image:url(../img/GNlogin.png) ;background-size: 438px 911px; background-repeat: no-repeat;
 			 width: 24%;height: 100%;}
@@ -23,11 +24,16 @@
 			.anliu{padding: 15px 30px 15px 30px;border-radius: 10px;background-color: #3259A4;}
 		
 		</style>
+		<script type="text/javascript" src="../js/login.js"></script>
 		<script type="text/javascript">
 			function zhuce(){
 				//window.open("GN注册页面.html")；//打开新页面跳转
 				window.location.href="GN注册页面.html";//直接跳转
 			}
+			function nonevalue(){
+				document.getElementById("user").value="";
+			}
+			
 		</script>
 	</head>
 	<body>
@@ -56,7 +62,7 @@
 						   </div>
 						</td>
 						<td>:</td>
-						<td><input type="text"  id="" name="user" class="user" value="身份证号码/手机号/邮箱" /></td>
+						<td><input type="text"  id="user" name="user" class="user" value="身份证号码/手机号/邮箱" onclick="nonevalue();" /></td>
 					</tr>
 					<tr>
 						<td>
@@ -65,12 +71,12 @@
 						   </div>
 						</td>
 						<td>:</td>
-						<td><input type="password"  id="" name="pwd" class="user" value="密码" /></td>
+						<td><input type="password"  id="pwd" name="pwd" class="user" value="" /></td>
 					</tr>
 					<tr>
 						<td>验证码</td>
 						<td>：</td>
-						<td><input type="text" id=""  name="check"  value="" class="user" /></td>
+						<td><input type="text" id="verificationcode"  name="check"  value="" class="user" /></td>
 					</tr>
 					<tr >
 						<td colspan="3" ><a href="#" style="font-size: 15px;color: #000000;text-decoration: none;">忘记密码</a></td>
@@ -78,7 +84,7 @@
 					</tr>
 					<tr>
 						<td  colspan="3"><input type="button" class="anliu"  id="zhuche" value="注册" onclick="zhuce()" />
-						<input type="submit" id="denglu" class="anliu" value="登陆" style="margin-left: 150px;" /></td>
+						<input type="button" id="denglu" class="anliu" value="登陆" style="margin-left: 150px;" onclick="login();" /></td>
 					</tr>					
 				  </table>
 					
