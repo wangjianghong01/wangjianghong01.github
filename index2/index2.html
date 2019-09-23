@@ -7,11 +7,8 @@
 		<script type="text/javascript" src="../js/jquery/jquery-3.2.1.js" ></script>
 		<script type="text/javascript" src="../js/index2Js.js" ></script>
 		<script type="text/javascript" src="../js/indexJs.js" ></script>
-		<script type="text/javascript">
-			cheshi();
-		</script>
 	</head>
-	<body >	
+	<body onload="load2();">	
 		<div class="suo" id="suo"   >
 		    <div class="suo-1" style="border-right: 3px solid white;">
 		    	内容
@@ -114,7 +111,7 @@
 			</div>
 		</div>
 		<div class="div" id="top" >
-			<div id="logo" align="center" onclick="tiaozhuan()">
+			<div id="logo" align="center" onclick="">
 				logo
 			</div>
 			<div id="top-1">
@@ -206,11 +203,8 @@
 			        </div>
 				</div>
 				<div id="div3-2" class="div3-2"  >
-					<video  id="vidplay" controls="controls" width="775px" height="436px">
-						<source  src="video/图1.mp4" type="video/mp4"></source>
-			            <source  src="myvideo.ogv" type="video/ogg"></source>
-			            <source  src="myvideo.webm" type="video/webm"></source>
-			                          当前浏览器不支持 video直接播放，点击这里下载视频： <a href="myvideo.webm">下载视频</a>
+					<video  id="vidplay" src="../index2/video/" controls="controls" width="775px" height="436px" onclick="vidShift();">
+						
 					</video>										
 					
 					<!--
