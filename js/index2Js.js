@@ -81,7 +81,7 @@ function playSpeed(){
 	var video=document.getElementById("vidplay");	
 	var btn=document.getElementById("playSpeed");
 	if(btn.value=="倍速"){
-		video.playbackRate=2;
+		video.playbackRate=1.5;
 		btn.value="还原";
 	}else if(btn.value=="还原"){
 		video.playbackRate=1;
