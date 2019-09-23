@@ -8,10 +8,10 @@
 		<link rel="stylesheet" type="text/css" href="css/index.css"/>
 
 	</head>
-	<body >
+	<body onload="load();">
 		<div align="center">
-			<div id="top" style="width:1920;height:60px;background-color:#2f4f4f;">
-				
+			<div id="top" style="width:100%;height:60px;background-color:#2f4f4f;">
+				<div style=" width:150px;height:45px;float:left;border: 1px solid;" align="center">造梦者影视logo</div>
 				<ul>
 					<li><a href="menu/精选.html">精选</a></li>
 					<li><a href="menu/校园故事.html">校园故事</a></li>
@@ -30,7 +30,7 @@
 				 <div style="width: 180px;height:250px ;background-color:#191970;float: right; margin-top: 30px;margin-right: 15px;color: white;">
 		        	重磅校园热度
 		        </div>
-				<div  style="width: 250px;height: 295px;float: right;position:absolute;left:42%;">
+				<div  style="width: 250px;height: 295px;margin: auto;">
 			     <div >
 				  <span  >
 					<input type="text" id="" value="搜索框" style=" margin-top: 10px;width: 200px; height: 30px; background-color: #3d59ab;font-size: 25px;border:0px;color:white;"  />
@@ -60,19 +60,19 @@
 						</div>
 						<div class="videoshow">
 							<div class="sp">
-								<div class="sp1"  onclick="tz1('sp1','图1.mp4')">
-									<div class="sp2" >
+								<div class="sp1">
+									<div class="sp2">
 															
 									</div>
 									<div name="bianhui" class="sp3" >
 										<div>图一</div>
 										<div style="margin: 5px;">武汉工程大学</div>
 										<div style=" width:60% ; border: 1px solid #1E90FF;" class="sp4"  >
-											<a href="" style="color: #c0c0c0;" alt="图1.mp4" id="sp1">MORE >></a>
+											<span style="color: #c0c0c0;" alt="图1.mp4"  >MORE >></span>
 										</div>
 									</div>
 								</div>
-								<div class="sp1"  onclick="tz1('sp2','图2.mp4')">
+								<div class="sp1"  onclick="">
 									<div class="sp2" >
 										2
 									</div>
@@ -80,11 +80,11 @@
 										<div>视频标题</div>
 										<div style="margin: 5px;">学校名称</div>
 										<div class="sp4" style=" width:60% ; border: 1px solid #1E90FF;"  >
-											<a href="#"  style="color: #c0c0c0;" alt="图2.mp4" id="sp2">MORE >></a>
+											<span style="color: #c0c0c0;" alt="图1.mp4"  >MORE >></span>
 										</div>
 									</div>
 								</div>
-								<div class="sp1" onclick="tz1('sp3')" >
+								<div class="sp1"  onclick="" >
 									<div class="sp2" >
 					                   3
 									</div>
@@ -92,7 +92,7 @@
 										<div>视频标题</div>
 										<div style="margin: 5px;">学校名称</div>
 										<div style=" width:60% ; border: 1px solid #1E90FF;" class="sp4" >
-											<a href="#"  style="color: #c0c0c0;" id="sp3" alt="图3.mp4" >MORE >></a>
+											<span style="color: #c0c0c0;" alt="图1.mp4"  >MORE >></span>
 										</div>
 									</div>
 								</div>
@@ -104,7 +104,7 @@
 										<div>视频标题</div>
 										<div style="margin: 5px;">学校名称</div>
 										<div style=" width:60% ; border: 1px solid #1E90FF;" class="sp4"  >
-											<a href="#" style="color: #c0c0c0;" >MORE >></a>
+											<span style="color: #c0c0c0;" alt="图1.mp4"  >MORE >></span>
 										</div>
 									</div>
 								</div>
@@ -116,7 +116,7 @@
 										<div>视频标题</div>
 										<div style="margin: 5px;">学校名称</div>
 										<div style=" width:60% ; border: 1px solid #1E90FF;" class="sp4"  >
-											<a href="#" style="color: #c0c0c0;" >MORE >></a>
+											<span style="color: #c0c0c0;" alt="图1.mp4"  >MORE >></span>
 										</div>
 									</div>
 								</div>
@@ -128,7 +128,7 @@
 										<div>视频标题</div>
 										<div style="margin: 5px;">学校名称</div>
 										<div style=" width:60% ; border: 1px solid #1E90FF;" class="sp4"  >
-											<a href="#"  style="color: #c0c0c0;" >MORE >></a>
+											<span style="color: #c0c0c0;" alt="图1.mp4"  >MORE >></span>
 										</div>
 									</div>
 								</div>
@@ -140,7 +140,7 @@
 										<div>视频标题</div>
 										<div style="margin: 5px;">学校名称</div>
 										<div style=" width:60% ; border: 1px solid #1E90FF;"  class="sp4" >
-											<a href="#" style="color: #c0c0c0;" >MORE >></a>
+											<span style="color: #c0c0c0;" alt="图1.mp4"  >MORE >></span>
 										</div>
 									</div>
 								</div>
@@ -152,7 +152,7 @@
 										<div>视频标题</div>
 										<div style="margin: 5px;">学校名称</div>
 										<div style=" width:60% ; border: 1px solid #1E90FF;" class="sp4" >
-											<a href="#"  style="color: #c0c0c0;" >MORE >></a>
+											<span style="color: #c0c0c0;" alt="图1.mp4"  >MORE >></span>
 										</div>
 									</div>
 								</div>
@@ -181,7 +181,7 @@
 										<div>视频标题</div>
 										<div style="margin: 5px;">学校名称</div>
 										<div style=" width:60% ; border: 1px solid #1E90FF;" class="sp4"  >
-											<a href="#" style="color: #c0c0c0;" >MORE >></a>
+											<span style="color: #c0c0c0;" alt="图1.mp4"  >MORE >></span>
 										</div>
 									</div>
 								</div>
@@ -193,7 +193,7 @@
 										<div>视频标题</div>
 										<div style="margin: 5px;">学校名称</div>
 										<div class="sp4" style=" width:60% ; border: 1px solid #1E90FF;"  >
-											<a href="#"  style="color: #c0c0c0;" >MORE >></a>
+											<span style="color: #c0c0c0;" alt="图1.mp4"  >MORE >></span>
 										</div>
 									</div>
 								</div>
@@ -205,7 +205,7 @@
 										<div>视频标题</div>
 										<div style="margin: 5px;">学校名称</div>
 										<div style=" width:60% ; border: 1px solid #1E90FF;" class="sp4" >
-											<a href="#"  style="color: #c0c0c0;" >MORE >></a>
+											<span style="color: #c0c0c0;" alt="图1.mp4"  >MORE >></span>
 										</div>
 									</div>
 								</div>
@@ -217,7 +217,7 @@
 										<div>视频标题</div>
 										<div style="margin: 5px;">学校名称</div>
 										<div style=" width:60% ; border: 1px solid #1E90FF;" class="sp4"  >
-											<a href="#" style="color: #c0c0c0;" >MORE >></a>
+											<span style="color: #c0c0c0;" alt="图1.mp4"  >MORE >></span>
 										</div>
 									</div>
 								</div>
@@ -229,7 +229,7 @@
 										<div>视频标题</div>
 										<div style="margin: 5px;">学校名称</div>
 										<div style=" width:60% ; border: 1px solid #1E90FF;" class="sp4"  >
-											<a href="#" style="color: #c0c0c0;" >MORE >></a>
+											<span style="color: #c0c0c0;" alt="图1.mp4"  >MORE >></span>
 										</div>
 									</div>
 								</div>
@@ -241,7 +241,7 @@
 										<div>视频标题</div>
 										<div style="margin: 5px;">学校名称</div>
 										<div style=" width:60% ; border: 1px solid #1E90FF;" class="sp4"  >
-											<a href="#"  style="color: #c0c0c0;" >MORE >></a>
+											<span style="color: #c0c0c0;" alt="图1.mp4"  >MORE >></span>
 										</div>
 									</div>
 								</div>
@@ -253,7 +253,7 @@
 										<div>视频标题</div>
 										<div style="margin: 5px;">学校名称</div>
 										<div style=" width:60% ; border: 1px solid #1E90FF;"  class="sp4" >
-											<a href="#" style="color: #c0c0c0;" >MORE >></a>
+											<span style="color: #c0c0c0;" alt="图1.mp4"  >MORE >></span>
 										</div>
 									</div>
 								</div>
@@ -265,7 +265,7 @@
 										<div>视频标题</div>
 										<div style="margin: 5px;">学校名称</div>
 										<div style=" width:60% ; border: 1px solid #1E90FF;" class="sp4" >
-											<a href="#"  style="color: #c0c0c0;" >MORE >></a>
+											<span style="color: #c0c0c0;" alt="图1.mp4"  >MORE >></span>
 										</div>
 									</div>
 								</div>
@@ -294,7 +294,7 @@
 										<div>视频标题</div>
 										<div style="margin: 5px;">学校名称</div>
 										<div style=" width:60% ; border: 1px solid #1E90FF;" class="sp4"  >
-											<a href="#" style="color: #c0c0c0;" >MORE >></a>
+											<span style="color: #c0c0c0;" alt="图1.mp4"  >MORE >></span>
 										</div>
 									</div>
 								</div>
@@ -306,7 +306,7 @@
 										<div>视频标题</div>
 										<div style="margin: 5px;">学校名称</div>
 										<div class="sp4" style=" width:60% ; border: 1px solid #1E90FF;"  >
-											<a href="#"  style="color: #c0c0c0;" >MORE >></a>
+											<span style="color: #c0c0c0;" alt="图1.mp4"  >MORE >></span>
 										</div>
 									</div>
 								</div>
@@ -318,7 +318,7 @@
 										<div>视频标题</div>
 										<div style="margin: 5px;">学校名称</div>
 										<div style=" width:60% ; border: 1px solid #1E90FF;" class="sp4" >
-											<a href="#"  style="color: #c0c0c0;" >MORE >></a>
+											<span style="color: #c0c0c0;" alt="图1.mp4"  >MORE >></span>
 										</div>
 									</div>
 								</div>
@@ -330,7 +330,7 @@
 										<div>视频标题</div>
 										<div style="margin: 5px;">学校名称</div>
 										<div style=" width:60% ; border: 1px solid #1E90FF;" class="sp4"  >
-											<a href="#" style="color: #c0c0c0;" >MORE >></a>
+											<span style="color: #c0c0c0;" alt="图1.mp4"  >MORE >></span>
 										</div>
 									</div>
 								</div>
@@ -342,7 +342,7 @@
 										<div>视频标题</div>
 										<div style="margin: 5px;">学校名称</div>
 										<div style=" width:60% ; border: 1px solid #1E90FF;" class="sp4"  >
-											<a href="#" style="color: #c0c0c0;" >MORE >></a>
+											<span style="color: #c0c0c0;" alt="图1.mp4"  >MORE >></span>
 										</div>
 									</div>
 								</div>
@@ -354,7 +354,7 @@
 										<div>视频标题</div>
 										<div style="margin: 5px;">学校名称</div>
 										<div style=" width:60% ; border: 1px solid #1E90FF;" class="sp4"  >
-											<a href="#"  style="color: #c0c0c0;" >MORE >></a>
+											<span style="color: #c0c0c0;" alt="图1.mp4"  >MORE >></span>
 										</div>
 									</div>
 								</div>
@@ -366,7 +366,7 @@
 										<div>视频标题</div>
 										<div style="margin: 5px;">学校名称</div>
 										<div style=" width:60% ; border: 1px solid #1E90FF;"  class="sp4" >
-											<a href="#" style="color: #c0c0c0;" >MORE >></a>
+											<span style="color: #c0c0c0;" alt="图1.mp4"  >MORE >></span>
 										</div>
 									</div>
 								</div>
@@ -378,7 +378,7 @@
 										<div>视频标题</div>
 										<div style="margin: 5px;">学校名称</div>
 										<div style=" width:60% ; border: 1px solid #1E90FF;" class="sp4" >
-											<a href="#"  style="color: #c0c0c0;" >MORE >></a>
+											<span style="color: #c0c0c0;" alt="图1.mp4"  >MORE >></span>
 										</div>
 									</div>
 								</div>
@@ -406,7 +406,7 @@
 										<div>视频标题</div>
 										<div style="margin: 5px;">学校名称</div>
 										<div style=" width:60% ; border: 1px solid #1E90FF;" class="sp4"  >
-											<a href="#" style="color: #c0c0c0;" >MORE >></a>
+											<span style="color: #c0c0c0;" alt="图1.mp4"  >MORE >></span>
 										</div>
 									</div>
 								</div>
@@ -418,7 +418,7 @@
 										<div>视频标题</div>
 										<div style="margin: 5px;">学校名称</div>
 										<div class="sp4" style=" width:60% ; border: 1px solid #1E90FF;"  >
-											<a href="#"  style="color: #c0c0c0;" >MORE >></a>
+											<span style="color: #c0c0c0;" alt="图1.mp4"  >MORE >></span>
 										</div>
 									</div>
 								</div>
@@ -430,7 +430,7 @@
 										<div>视频标题</div>
 										<div style="margin: 5px;">学校名称</div>
 										<div style=" width:60% ; border: 1px solid #1E90FF;" class="sp4" >
-											<a href="#"  style="color: #c0c0c0;" >MORE >></a>
+											<span style="color: #c0c0c0;" alt="图1.mp4"  >MORE >></span>
 										</div>
 									</div>
 								</div>
@@ -442,7 +442,7 @@
 										<div>视频标题</div>
 										<div style="margin: 5px;">学校名称</div>
 										<div style=" width:60% ; border: 1px solid #1E90FF;" class="sp4"  >
-											<a href="#" style="color: #c0c0c0;" >MORE >></a>
+											<span style="color: #c0c0c0;" alt="图1.mp4"  >MORE >></span>
 										</div>
 									</div>
 								</div>
@@ -454,7 +454,7 @@
 										<div>视频标题</div>
 										<div style="margin: 5px;">学校名称</div>
 										<div style=" width:60% ; border: 1px solid #1E90FF;" class="sp4"  >
-											<a href="#" style="color: #c0c0c0;" >MORE >></a>
+											<span style="color: #c0c0c0;" alt="图1.mp4"  >MORE >></span>
 										</div>
 									</div>
 								</div>
@@ -466,7 +466,7 @@
 										<div>视频标题</div>
 										<div style="margin: 5px;">学校名称</div>
 										<div style=" width:60% ; border: 1px solid #1E90FF;" class="sp4"  >
-											<a href="#"  style="color: #c0c0c0;" >MORE >></a>
+											<span style="color: #c0c0c0;" alt="图1.mp4"  >MORE >></span>
 										</div>
 									</div>
 								</div>
@@ -478,7 +478,7 @@
 										<div>视频标题</div>
 										<div style="margin: 5px;">学校名称</div>
 										<div style=" width:60% ; border: 1px solid #1E90FF;"  class="sp4" >
-											<a href="#" style="color: #c0c0c0;" >MORE >></a>
+											<span style="color: #c0c0c0;" alt="图1.mp4"  >MORE >></span>
 										</div>
 									</div>
 								</div>
@@ -490,7 +490,7 @@
 										<div>视频标题</div>
 										<div style="margin: 5px;">学校名称</div>
 										<div style=" width:60% ; border: 1px solid #1E90FF;" class="sp4" >
-											<a href="#"  style="color: #c0c0c0;" >MORE >></a>
+											<span style="color: #c0c0c0;" alt="图1.mp4"  >MORE >></span>
 										</div>
 									</div>
 								</div>
@@ -518,7 +518,7 @@
 										<div>视频标题</div>
 										<div style="margin: 5px;">学校名称</div>
 										<div style=" width:60% ; border: 1px solid #1E90FF;" class="sp4"  >
-											<a href="#" style="color: #c0c0c0;" >MORE >></a>
+											<span style="color: #c0c0c0;" alt="图1.mp4"  >MORE >></span>
 										</div>
 									</div>
 								</div>
@@ -530,7 +530,7 @@
 										<div>视频标题</div>
 										<div style="margin: 5px;">学校名称</div>
 										<div class="sp4" style=" width:60% ; border: 1px solid #1E90FF;"  >
-											<a href="#"  style="color: #c0c0c0;" >MORE >></a>
+											<span style="color: #c0c0c0;" alt="图1.mp4"  >MORE >></span>
 										</div>
 									</div>
 								</div>
@@ -542,7 +542,7 @@
 										<div>视频标题</div>
 										<div style="margin: 5px;">学校名称</div>
 										<div style=" width:60% ; border: 1px solid #1E90FF;" class="sp4" >
-											<a href="#"  style="color: #c0c0c0;" >MORE >></a>
+											<span style="color: #c0c0c0;" alt="图1.mp4"  >MORE >></span>
 										</div>
 									</div>
 								</div>
@@ -554,7 +554,7 @@
 										<div>视频标题</div>
 										<div style="margin: 5px;">学校名称</div>
 										<div style=" width:60% ; border: 1px solid #1E90FF;" class="sp4"  >
-											<a href="#" style="color: #c0c0c0;" >MORE >></a>
+											<span style="color: #c0c0c0;" alt="图1.mp4"  >MORE >></span>
 										</div>
 									</div>
 								</div>
@@ -566,7 +566,7 @@
 										<div>视频标题</div>
 										<div style="margin: 5px;">学校名称</div>
 										<div style=" width:60% ; border: 1px solid #1E90FF;" class="sp4"  >
-											<a href="#" style="color: #c0c0c0;" >MORE >></a>
+											<span style="color: #c0c0c0;" alt="图1.mp4"  >MORE >></span>
 										</div>
 									</div>
 								</div>
@@ -578,7 +578,7 @@
 										<div>视频标题</div>
 										<div style="margin: 5px;">学校名称</div>
 										<div style=" width:60% ; border: 1px solid #1E90FF;" class="sp4"  >
-											<a href="#"  style="color: #c0c0c0;" >MORE >></a>
+											<span style="color: #c0c0c0;" alt="图1.mp4"  >MORE >></span>
 										</div>
 									</div>
 								</div>
@@ -590,7 +590,7 @@
 										<div>视频标题</div>
 										<div style="margin: 5px;">学校名称</div>
 										<div style=" width:60% ; border: 1px solid #1E90FF;"  class="sp4" >
-											<a href="#" style="color: #c0c0c0;" >MORE >></a>
+											<span style="color: #c0c0c0;" alt="图1.mp4"  >MORE >></span>
 										</div>
 									</div>
 								</div>
@@ -602,7 +602,7 @@
 										<div>视频标题</div>
 										<div style="margin: 5px;">学校名称</div>
 										<div style=" width:60% ; border: 1px solid #1E90FF;" class="sp4" >
-											<a href="#"  style="color: #c0c0c0;" >MORE >></a>
+											<span style="color: #c0c0c0;" alt="图1.mp4"  >MORE >></span>
 										</div>
 									</div>
 								</div>
@@ -630,7 +630,7 @@
 										<div>视频标题</div>
 										<div style="margin: 5px;">学校名称</div>
 										<div style=" width:60% ; border: 1px solid #1E90FF;" class="sp4"  >
-											<a href="#" style="color: #c0c0c0;" >MORE >></a>
+											<span style="color: #c0c0c0;" alt="图1.mp4"  >MORE >></span>
 										</div>
 									</div>
 								</div>
@@ -642,7 +642,7 @@
 										<div>视频标题</div>
 										<div style="margin: 5px;">学校名称</div>
 										<div class="sp4" style=" width:60% ; border: 1px solid #1E90FF;"  >
-											<a href="#"  style="color: #c0c0c0;" >MORE >></a>
+											<span style="color: #c0c0c0;" alt="图1.mp4"  >MORE >></span>
 										</div>
 									</div>
 								</div>
@@ -654,7 +654,7 @@
 										<div>视频标题</div>
 										<div style="margin: 5px;">学校名称</div>
 										<div style=" width:60% ; border: 1px solid #1E90FF;" class="sp4" >
-											<a href="#"  style="color: #c0c0c0;" >MORE >></a>
+											<span style="color: #c0c0c0;" alt="图1.mp4"  >MORE >></span>
 										</div>
 									</div>
 								</div>
@@ -666,7 +666,7 @@
 										<div>视频标题</div>
 										<div style="margin: 5px;">学校名称</div>
 										<div style=" width:60% ; border: 1px solid #1E90FF;" class="sp4"  >
-											<a href="#" style="color: #c0c0c0;" >MORE >></a>
+											<span style="color: #c0c0c0;" alt="图1.mp4"  >MORE >></span>
 										</div>
 									</div>
 								</div>
@@ -678,7 +678,7 @@
 										<div>视频标题</div>
 										<div style="margin: 5px;">学校名称</div>
 										<div style=" width:60% ; border: 1px solid #1E90FF;" class="sp4"  >
-											<a href="#" style="color: #c0c0c0;" >MORE >></a>
+											<span style="color: #c0c0c0;" alt="图1.mp4"  >MORE >></span>
 										</div>
 									</div>
 								</div>
@@ -690,7 +690,7 @@
 										<div>视频标题</div>
 										<div style="margin: 5px;">学校名称</div>
 										<div style=" width:60% ; border: 1px solid #1E90FF;" class="sp4"  >
-											<a href="#"  style="color: #c0c0c0;" >MORE >></a>
+											<span style="color: #c0c0c0;" alt="图1.mp4"  >MORE >></span>
 										</div>
 									</div>
 								</div>
@@ -702,7 +702,7 @@
 										<div>视频标题</div>
 										<div style="margin: 5px;">学校名称</div>
 										<div style=" width:60% ; border: 1px solid #1E90FF;"  class="sp4" >
-											<a href="#" style="color: #c0c0c0;" >MORE >></a>
+											<span style="color: #c0c0c0;" alt="图1.mp4"  >MORE >></span>
 										</div>
 									</div>
 								</div>
@@ -714,7 +714,7 @@
 										<div>视频标题</div>
 										<div style="margin: 5px;">学校名称</div>
 										<div style=" width:60% ; border: 1px solid #1E90FF;" class="sp4" >
-											<a href="#"  style="color: #c0c0c0;" >MORE >></a>
+											<span style="color: #c0c0c0;" alt="图1.mp4"  >MORE >></span>
 										</div>
 									</div>
 								</div>
@@ -749,7 +749,7 @@
 					<a href="#">学生兼职</a>
 				</div>	
 			</div>
-			<div style="width: 1920;"><hr></div>
+			<div style="width:1520px;"><hr/></div>
 			<div id="" style="width:1920;height: 150px;">
 				<div style="height: 80%;width: 100%;">
 					<div style="width: 20%;float: left;margin: 0px;font-size: 20px;font-weight: bolder;">
